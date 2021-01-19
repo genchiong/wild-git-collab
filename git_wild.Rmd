@@ -36,8 +36,11 @@ ggplot(data = diamonds, aes(x = color, y = carat)) +
 
 ```{r break-it-1}
 ggplot(data = diamonds, aes(x = depth, y = carat)) +
-  geom_point() +
-  theme_void()
+  geom_jitter(color = "blue") +
+  theme_dark()
+
+ggplot(data = diamonds, aes(x = table, y = price)) +
+  geom_line()
 ```
 
 ```{r break-it-2}
