@@ -47,8 +47,14 @@ premium_diamonds <- diamonds %>%
 
 ```{r break-it-2}
 
+
 ideal_diamonds <- diamonds %>% 
   filter(cut == "Ideal")
+
+very_good_diamonds <- diamonds %>% 
+  filter(cut == "Very Good") %>% 
+  select(clarity:price)
+
 ```
 
 ## END Discussion 3
